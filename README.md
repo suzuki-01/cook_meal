@@ -1,24 +1,35 @@
-# README
+# CookMeal(レシピ投稿サイト)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+- 料理のレシピを投稿できるサイトで、料理の仕事をしている人は「プロ」と表示して見習いなら「見習い」、料理好きな人は「料理好き」、主婦や主夫なら「アマチュア」
+のように表示させます。これによりどのぐらいの実力がある人のレシピか瞬時に判断できますし、検索の際にも便利になります。
+料理好きな人がプロの料理やアイデアを参考にしたい時や見習いの人なら賄いの制作やメニュー開発の参考にもなりますし
+主婦や主夫の方なら少し凝った料理を作りたい時にぴったりだと思います。
+またプロの人は主夫や主婦の方のレシピで流行や人気が把握できるので誰にとっても使いたいサイトになると思います。
 
-Things you may want to cover:
+### サイトテーマ
+- プロや見習いや料理好きな人や主婦や主夫の方など料理に携わるいろんな人がそれぞれの知りたい情報を知れるサイト！
 
-* Ruby version
+### テーマを選んだ理由
+- 自分の前職が料理をしていたのですがその時に賄いを毎日作るのはできるのですが何を作るのか考えるのが大変でした。
+そんな時に冷蔵庫に残っている材料から検索をかけたり素材の知らない使い方を手軽に検索できるサイトが欲しいと思っていました。
+また、この思いは自分だけでなく料理仲間や自分の母親も同じでした。そのため実際の現場の素材の使い方や賄いのメニューの共有ができるサイトを作ろうと思いました。
 
-* System dependencies
+### ターゲットユーザ
+- 見習い料理人　プロ　料理好きな人　主婦  主夫
 
-* Configuration
+### 主な利用シーン
+- 料理を作る時
 
-* Database creation
+## 設計書
 
-* Database initialization
 
-* How to run the test suite
+## チャレンジ要素一覧
+- https://docs.google.com/spreadsheets/d/1sjOT27q8hFNcv_E-P89RmeOUKuosv70JnPLLimCm224/edit?usp=sharing
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
