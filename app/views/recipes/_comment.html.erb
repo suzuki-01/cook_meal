@@ -1,0 +1,28 @@
+<table class="table">
+  <thead>
+      <th>コメント投稿者</th>
+        <th>コメント内容</th>
+          <th colspan="2"></th>
+            <% @recipe.comments.each do |comment| %>
+            <tr>
+              <td><%= link_to user_path(comment.user) do %>
+                <%= attachment_image_tag comment.user, :profile_image, size: "50x50", fallback: "no_image.jpg" %><br>
+                <%= comment.user.username  %>
+              <% end %>
+              </td>
+              <td><%= comment.content %></td>
+                <td><% if comment.user_id == current_user.id %>
+                  <%= link_to "Destroy", recipe_comment_path(comment.recipe.id, comment.id), class: 'btn-sm btn-danger',method: :delete, remote: true %>
+                  <% end %>
+                </td>
+              <td class="comment-date pull-right">
+                <%= comment.created_at.strftime('%Y/%m/%d') %>
+              </td>
+              </tr>
+            <% end %>
+          </table>
+        </div>
+      </tr>
+    </thead>
+  </tbody>
+</table>

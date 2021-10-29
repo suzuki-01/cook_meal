@@ -1,0 +1,5 @@
+<%= form_with(model:[recipe, comment], method: :post) do |f|%>
+    <%= f.text_field :content %>
+    <%= f.hidden_field :recipe_id, value: recipe.id%>
+    <%= f.submit 'コメントする' %>
+  <% end %>

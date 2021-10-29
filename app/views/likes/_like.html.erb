@@ -1,0 +1,16 @@
+<% if user_signed_in? %>
+  <% unless recipe.like_user(current_user.id).blank? %>
+    <%= link_to recipe_like_path(recipe_id: recipe.id, id: recipe.likes[0].id), method: :delete, remote: true do %>
+      <td class="vertical_like">
+        <%= image_tag "red_heart.png", size: '40x40' %>
+      </td>
+    <% end %>
+  <% else %>
+    <%= link_to recipe_likes_path(recipe.id), method: :post, remote: true do %>
+      <td class="vertical_like">
+        <%= image_tag "white_heart.png", size: '40x40' %>
+      </td>
+    <% end %>
+  <% end %>
+      <td><%= recipe.likes.count %></td>
+<% end %>
